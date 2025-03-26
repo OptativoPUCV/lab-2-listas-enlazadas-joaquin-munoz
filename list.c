@@ -50,7 +50,7 @@ void * nextList(List * list) {
 
 void * lastList(List * list) {
     Node* aux = list->head;
-    while(aux->current->next != NULL){
+    while(aux->next != NULL){
         aux = list->current->next;
         list->current->next = aux;
     }

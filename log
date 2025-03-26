@@ -109,3 +109,9 @@ list.c:53:14: error: 'Node {aka struct Node}' has no member named 'current'
               ^~
 Compilation failed
 990826d
+Wed, Mar 26, 2025  9:08:57 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|0
+   [ INFO ] llamando a lastList
+dfb9344
