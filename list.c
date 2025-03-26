@@ -49,13 +49,14 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {  
+    /*
     Node* aux = list->head;
-    
     while(aux->next != NULL){
         aux = aux->next;
         list->current = aux;
     }
     if(list->current->next != NULL) return list->current->data;
+    */
 }
 
 
