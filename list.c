@@ -47,15 +47,14 @@ void * nextList(List * list) {
     if (list->current!=NULL)return list->current->data;     //si el siguiente existe retorna su valor 
     return NULL;
 }
-void * lastList(List * list) {
-    /*    
+
+void * lastList(List * list) {  
     Node* aux = list->head;
     while(aux->next != NULL){
-        aux = list->current->next;
+        aux = aux->next;
         list->current->next = aux;
     }
     if(list->current->next != NULL) return list->current->data;
-    */
     return NULL;
 }
 
