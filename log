@@ -18,3 +18,13 @@ Wed, Mar 26, 2025  8:41:46 AM:
  tests:  1|5
 total_score: 10/70
 c82cc38
+Wed, Mar 26, 2025  8:45:29 AM: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:0:
+list.c: In function 'firstList':
+list.c:41:43: error: 'Node {aka struct Node}' has no member named 'key'
+     if(list->current) return list->current->key;
+                                           ^~
+Compilation failed
+2fc4ae2
