@@ -48,10 +48,7 @@ void * nextList(List * list) {
     return NULL;
 }
 
-void * lastList(List * list) { 
-    if (list == NULL || list->head == NULL){
-        return NULL;
-    }
+void * lastList(List * list) {
     while(list->current != NULL){
         list->current = list->current->next;
     }
