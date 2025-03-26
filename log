@@ -140,3 +140,14 @@ Wed, Mar 26, 2025  9:16:00 AM:
  tests:  5|4
 total_score: 25/70
 7d49d06
+Wed, Mar 26, 2025  9:17:14 AM: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'lastList':
+list.c:60:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+1e6d32c
