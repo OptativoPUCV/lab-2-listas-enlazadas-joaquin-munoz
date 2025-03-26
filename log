@@ -99,3 +99,13 @@ list.c:54:13: error: assignment from incompatible pointer type [-Werror=incompat
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2d611b8
+Wed, Mar 26, 2025  9:08:26 AM: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'lastList':
+list.c:53:14: error: 'Node {aka struct Node}' has no member named 'current'
+     while(aux->current->next != NULL){
+              ^~
+Compilation failed
+990826d
