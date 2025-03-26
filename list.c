@@ -50,8 +50,8 @@ void * nextList(List * list) {
 
 void * lastList(List * list) {
     List* aux = list->head;
-    while(aux->next != NULL){
-        aux = list->next;
+    while(aux->current->next != NULL){
+        aux = list->current->next;
     }
     if(aux != NULL) return list->current->data;
 
