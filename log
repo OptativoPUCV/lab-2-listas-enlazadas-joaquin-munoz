@@ -28,3 +28,9 @@ list.c:41:43: error: 'Node {aka struct Node}' has no member named 'key'
                                            ^~
 Compilation failed
 2fc4ae2
+Wed, Mar 26, 2025  8:46:01 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+53fbaad
