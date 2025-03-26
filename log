@@ -122,3 +122,9 @@ C:\Users\ESTUDI~1\AppData\Local\Temp\cc2LnmKl.o:test.c:(.text+0x68c): undefined 
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 84d1ed4
+Wed, Mar 26, 2025  9:13:39 AM: 
+ list.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ tests:  5|4
+total_score: 25/70
+6cfa5df
