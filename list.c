@@ -43,10 +43,13 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
+    if (list->current!=NULL) list->current = list->current->next; //pregunta si existe un nodo actual si es asi pasa al siguiente
+    if (list->current!=NULL)return list->current->data;     //si el siguiente existe retorna su valor 
     return NULL;
 }
 
 void * lastList(List * list) {
+    
     return NULL;
 }
 
