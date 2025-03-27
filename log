@@ -300,3 +300,17 @@ Thu, Mar 27, 2025  5:33:12 PM:
  tests:  9|3
 total_score: 35/70
 d318541
+Thu, Mar 27, 2025  6:02:14 PM: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+list.c: In function 'pushFront':
+list.c:76:5: error: statement with no effect [-Werror=unused-value]
+     list
+     ^~~~
+list.c:78:1: error: expected ';' before '}' token
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0fa661c
