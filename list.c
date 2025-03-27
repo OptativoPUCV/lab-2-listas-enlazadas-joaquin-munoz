@@ -85,6 +85,9 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
+    if (list->current == NULL) {
+        return;
+    }
     Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->data = data;
     Node* aux = list->current;
