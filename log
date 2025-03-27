@@ -380,3 +380,14 @@ Thu, Mar 27, 2025  7:10:32 PM:
  tests:  10|2
 total_score: 45/70
 af3382f
+Thu, Mar 27, 2025  7:22:16 PM: 
+ list.c | 20 ++++++++++++++++----
+ 1 file changed, 16 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'pushCurrent':
+list.c:101:17: error: 'newNodo' undeclared (first use in this function)
+     izq->next = newNodo;
+                 ^~~~~~~
+list.c:101:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+a04efd2

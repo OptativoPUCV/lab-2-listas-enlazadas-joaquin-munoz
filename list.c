@@ -85,16 +85,28 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
-    if (list->current == NULL) {
+    if (list->current == NULL) {//pregunta si la lista o la posicion no existe
         return;
     }
     Node* newNode = (Node*)malloc(sizeof(Node));
+    if (newNode == NULL) {
+        return;  // Manejo de error si malloc falla
+    }
     newNode->data = data;
-    Node* aux = list->current;
-    Node* izq = aux;
-    Node* der = aux->next;
+    Node* izq = list->current;
+    Node* der = izq->next;
+    
     newNode->prev = izq;
     newNode->next = der;
+    izq->next = newNodo;
+                                        // Si `der` existía, su `prev` debe apuntar al nuevo nodo
+    if (der != NULL) {
+        der->prev = newNode;
+    } else {
+                                        // Si `current` era el último nodo, `newNode` se convierte en `tail`
+        list->tail = newNode;
+    }
+    
 }
 
 void * popFront(List * list) {
