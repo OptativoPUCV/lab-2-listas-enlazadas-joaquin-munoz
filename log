@@ -391,3 +391,9 @@ list.c:101:17: error: 'newNodo' undeclared (first use in this function)
 list.c:101:17: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 a04efd2
+Thu, Mar 27, 2025  7:22:28 PM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+8a2dd17

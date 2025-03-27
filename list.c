@@ -98,7 +98,7 @@ void pushCurrent(List * list, void * data) {
     
     newNode->prev = izq;
     newNode->next = der;
-    izq->next = newNodo;
+    izq->next = newNode;
                                         // Si `der` existía, su `prev` debe apuntar al nuevo nodo
     if (der != NULL) {
         der->prev = newNode;
